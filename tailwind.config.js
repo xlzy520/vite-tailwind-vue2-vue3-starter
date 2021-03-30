@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  darkMode: "class", // or 'media'
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     // classes that are generated dynamically, e.g. `rounded-${size}` and must
@@ -8,8 +9,7 @@ module.exports = {
     safeList: [],
     content: [
       './index.html',
-      './src/**/*.vue',
-      './src/**/*.js',
+      './src/**/*.{vue,js,ts,jsx,tsx}',
       // etc.
     ],
   },
@@ -21,4 +21,6 @@ module.exports = {
       },
     },
   },
+  variants: {},
+  plugins: [],
 }

@@ -1,18 +1,26 @@
 <template>
-  <div
-    class="px-4 py-6 sm:px-0 mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-  >
-    <div class="sm:text-center lg:text-left">
-      <h2
-        class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
-      >
-        Not found
-      </h2>
-      <p
-        class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-      >
-        The page you requested doesn't seem to exist...
-      </p>
+  <section class="text-gray-600 body-font">
+    <div
+      class="container flex flex-col items-center justify-center px-5 py-24 mx-auto"
+    >
+      <img
+        class="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6"
+        alt="hero"
+        src="@/assets/not-found.svg"
+      />
+      <div class="w-full text-center lg:w-2/3">
+        <Heading1 class="text-red-500 dark:text-red-500"
+          >404 NOT FOUND</Heading1
+        >
+        <p class="mb-8 leading-relaxed dark:text-gray-300">
+          Oops, looks like you got kidnapped by aliens.
+        </p>
+        <div class="flex justify-center">
+          <RouterLink :to="{ name: 'Home' }">
+            <ButtonPrimary> Bring me back Home </ButtonPrimary>
+          </RouterLink>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>

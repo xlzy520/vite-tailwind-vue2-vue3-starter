@@ -1,61 +1,31 @@
 <template>
-  <main>
+  <section class="text-gray-600 body-font">
     <div
-      class="px-4 py-6 sm:px-0 mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+      class="container flex flex-col items-center justify-center px-5 py-24 mx-auto"
     >
-      <div class="sm:text-center lg:text-left">
-        <h2
-          class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
-        >
-          This demo is using
-          <br class="xl:hidden" />
-          <a
-            target="_blank"
-            class="text-indigo-600 underline hover:text-indigo-500"
-            href="https://tailwindcss.com"
-            >Tailwind CSS</a
-          >
-        </h2>
-        <p
-          class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-        >
-          All the code present here is part of a free sample from
-          <a
-            href="https://tailwindui.com"
-            class="text-indigo-600 underline hover:text-indigo-500"
-            >Tailwind UI</a
-          >
-          but, you don't need it. If you want to add
-          <b>Tailwind UI </b>&#32; check the instructions on
-          <a
-            class="text-indigo-600 underline hover:text-indigo-500"
-            href="https://github.com/posva/vite-tailwind-starter/tree/master#vite--tailwind-css-starter"
-            ><code>README</code></a
-          >. It only takes two steps to add it 🙂.
+      <div class="w-full text-center lg:w-2/3">
+        <Heading1> About: Vite ⚡ - Vue 2 starter template </Heading1>
+        <p class="mb-8 leading-relaxed dark:text-gray-300">
+          This starter template will help you to easily create a Vue2
+          application bundled by the lightning fast build tool called Vite.
+          Besides Vite this template also provides typescript support,
+          TailwindCSS, vue-router, vueuse and the vue composition-api for Vue2.
         </p>
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
-            <a
-              href="https://github.com/posva/vite-tailwind-starter"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+        <div class="flex justify-center">
+          <a
+            href="https://github.com/lstoeferle/vite-vue2-windicss-starter"
+            target="_blank"
+          >
+            <button
+              class="inline-flex items-center px-6 py-2 text-lg text-white bg-black border-0 rounded focus:outline-none hover:bg-gray-900"
             >
-              Get started
-            </a>
-          </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
-            <a
-              href="#"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:ring focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-            >
-              Live demo
-            </a>
-          </div>
+              <IconGithub /> &nbsp;GitHub
+            </button>
+          </a>
         </div>
       </div>
     </div>
-  </main>
+  </section>
 </template>
-
 <script>
-export default {}
 </script>
