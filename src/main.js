@@ -1,15 +1,17 @@
-import { createApp } from 'vue'
-import "windi.css";
-import App from './App.vue'
-import { routes } from '/src/router/index.js'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import Vue from "vue"
+import App from "@/App.vue"
+import { createApp, h } from "vue-demi"
 
-let app = createApp(App)
-let router = createRouter({
-  history: createWebHashHistory(),
-  routes,
+Vue.config.productionTip = false
+Vue.config.devtools = true
+
+import "windi.css"
+import router from "@/router"
+
+const app = createApp({
+  router,
+  render: () => h(App),
 })
 
-app.use(router)
 
 app.mount('#app')

@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import { computed, defineComponent, getCurrentInstance } from "vue-demi";
+import { computed, defineComponent } from "vue-demi";
 import { routes } from '@/router';
 import { useDark, useToggle } from "@vueuse/core";
 
@@ -63,10 +63,9 @@ export default defineComponent({
   setup: (_, ctx) => {
     // Import config from .evn
     const appName = import.meta.env.VITE_APP_NAME;
-    const instance = getCurrentInstance()
 
     const availableRoutes = routes.filter((route) => route.name != "NotFound");
-    const currentRoute = computed(() => instance.ctx.$router.currentRoute.value.name);
+    const currentRoute = computed(() => ctx.root.$route.name);
 
     const isDark = useDark();
     const toggle = useToggle(isDark)

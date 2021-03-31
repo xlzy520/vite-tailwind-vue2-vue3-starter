@@ -1,7 +1,6 @@
 import path from "path";
 import { defineConfig } from "vite";
-import vue from '@vitejs/plugin-vue'
-// import { createVuePlugin } from "vite-plugin-vue2";
+import { createVuePlugin } from "vite-plugin-vue2";
 import ViteComponents from "vite-plugin-components";
 import WindiCSS from "vite-plugin-windicss";
 import ViteIcons, { ViteIconsResolver } from "vite-plugin-icons";
@@ -19,12 +18,11 @@ const config = defineConfig({
   },
   
   plugins: [
-    vue(),
-    // createVuePlugin(),
+    createVuePlugin(),
     ViteComponents({
       customComponentResolvers: [
         ViteIconsResolver({
-          componentPrefix: "icon",
+          componentPrefix: "Icon",
         }),
       ],
     }),
@@ -35,7 +33,7 @@ const config = defineConfig({
   ],
   
   server: {
-    port: 8080,
+    port: 9027,
   },
 });
 
