@@ -3,6 +3,8 @@
 
 <p align="center">
   master分支支持vue3，另外还有vue2分支
+</p>
+<p align="center">
   Create a Vue 2 application bundled by the lightning fast build tool <a href="https://github.com/vitejs/vite">Vite</a>
 </p>
 
