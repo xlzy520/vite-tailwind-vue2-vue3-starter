@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import { computed, defineComponent, getCurrentInstance } from "vue-demi";
+import { computed, defineComponent, getCurrentInstance } from "vue";
 import { routes } from '@/router';
 import { useDark, useToggle } from "@vueuse/core";
 

@@ -1158,7 +1158,7 @@ vite@^2.1.3:
   optionalDependencies:
     fsevents "~2.3.1"
 
-vue-demi@^0.7.4, vue-demi@latest:
+vue-demi@latest:
   version "0.7.4"
   resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.7.4.tgz#4c6be525788e1f6b3fd5d4f5f9f2148cf6645979"
   integrity sha1-TGvlJXiOH2s/1dT1+fIUjPZkWXk=

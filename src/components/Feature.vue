@@ -16,14 +16,14 @@
         class="inline-flex items-center mt-3 text-green-500"
       >
         Learn More
-        <MdiArrowRight class="ml-1" />
+        <icon-MdiArrowRight class="ml-1" />
       </a>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue-demi";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Feature",

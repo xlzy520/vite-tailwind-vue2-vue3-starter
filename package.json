@@ -10,7 +10,6 @@
     "@vue/composition-api": "^1.0.0-rc.5",
     "@vueuse/core": "^4.6.1",
     "vue": "^3.0.7",
-    "vue-demi": "^0.7.4",
     "vue-router": "^4.0.5"
   },
   "devDependencies": {
