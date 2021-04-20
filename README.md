@@ -1,4 +1,6 @@
-<h1 align="center">Vite ⚡ - Vue 2 starter template</h1>
+<h1 align="center">Vite ⚡ - Vue 3 or Vue2 starter template</h1>
+
+master分支支持vue3，另外还有vue2分支
 
 <p align="center">
   Create a Vue 2 application bundled by the lightning fast build tool <a href="https://github.com/vitejs/vite">Vite</a>
