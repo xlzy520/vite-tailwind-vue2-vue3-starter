@@ -1,11 +1,12 @@
 import { createApp } from 'vue'
-import "windi.css";
-import App from './App.vue'
-import { routes } from '/src/router/index.js'
+import 'windi.css'
+import '@/style/index.scss'
 import { createRouter, createWebHashHistory } from 'vue-router'
+import { routes } from '@/router'
+import App from './App.vue'
 
-let app = createApp(App)
-let router = createRouter({
+const app = createApp(App)
+const router = createRouter({
   history: createWebHashHistory(),
   routes,
 })

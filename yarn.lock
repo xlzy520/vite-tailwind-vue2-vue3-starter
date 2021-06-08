@@ -1146,10 +1146,10 @@ vite-plugin-windicss@^0.10.2:
     debug "^4.3.2"
     windicss "^2.5.7"
 
-vite@^2.1.3:
-  version "2.1.4"
-  resolved "https://registry.npm.taobao.org/vite/download/vite-2.1.4.tgz?cache=0&sync_timestamp=1617068381296&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvite%2Fdownload%2Fvite-2.1.4.tgz#66396823701e54cf3bfb9f73dbd386c9b4329c86"
-  integrity sha1-ZjloI3AeVM87+59z29OGybQynIY=
+vite@~2.2.4:
+  version "2.2.4"
+  resolved "https://registry.nlark.com/vite/download/vite-2.2.4.tgz?cache=0&sync_timestamp=1620026760910&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvite%2Fdownload%2Fvite-2.2.4.tgz#8f9cc85aacab04c850085894b086c8717f12ed16"
+  integrity sha1-j5zIWqyrBMhQCFiUsIbIcX8S7RY=
   dependencies:
     esbuild "^0.9.3"
     postcss "^8.2.1"

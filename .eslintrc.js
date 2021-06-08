@@ -1,19 +1,23 @@
+// .eslintrc.js 文件内容， 此处是eslint的规则定义， 可自行修改，可参考eslint官网修改
 module.exports = {
   root: true,
-  env: {
-    node: true,
-  },
   extends: [
-    "plugin:vue/essential",
-    "eslint:recommended",
+    // 'eslint:recommended',
+    'plugin:vue/essential',
+    'airbnb-base'
   ],
   parserOptions: {
-    ecmaVersion: 9,
-    ecmaFeatures: {
-      jsx: false,
-    },
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  plugins: [
+    'vue'
+  ],
   rules: {
     'arrow-parens': 'off',
     'no-tabs': 'off',
@@ -24,6 +28,7 @@ module.exports = {
       '^(err|error)$'
     ],
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'linebreak-style': 'off',
@@ -38,8 +43,7 @@ module.exports = {
     'no-console': 'off',
     'no-multi-assign': 'off',
     'no-underscore-dangle': 'off',
-    'node/no-deprecated-api': 'error',
-    'node/process-exit-as-throw': 'error',
+    'object-curly-spacing': 'error',
     'operator-linebreak': [
       'error',
       'after',
@@ -81,5 +85,9 @@ module.exports = {
         objects: 'always-multiline',
       }
     ],
+  },
+  globals: {
+    window: true,
+    document: true,
   },
 }
